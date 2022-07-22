@@ -143,8 +143,15 @@ function getDistanceTime(time) {
 }
 
 // Eksekusi code selama interval (second,minute,etc) yang ditentukan
-setInterval(intervalFunction, 1000)
+// #1
 
-function intervalFunction() {
+setInterval(function() {
     renderBlog()
-}
+}, 1000)
+
+// #2
+// setInterval(intervalFunction, 1000)
+
+// function intervalFunction() {
+//     renderBlog()
+// }
